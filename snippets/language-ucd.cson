@@ -1,0 +1,70 @@
+'.source.ucd':
+  'class { ... }':
+    'prefix': 'cla'
+    'body': 'class ${1:Name} {\n\t$0\n}'
+  'abstract class { ... }':
+    'prefix': 'acla'
+    'body': 'abstract class ${1:Name} {\n\t$0\n}'
+  'interface class { ... }':
+    'prefix': 'icla'
+    'body': 'interface class ${1:Name} {\n\t$0\n}'
+  'field':
+    'prefix': 'fie'
+    'body': 'field ${1:name} : ${2:Type}'
+  'static field':
+    'prefix': 'sfie'
+    'body': 'static field ${1:name} : ${2:Type}'
+  'method':
+    'prefix': 'met'
+    'body': 'method ${1:name}() : ${2:Type}'
+  'abstract method':
+    'prefix': 'amet'
+    'body': 'abstract method ${1:name}() : ${2:Type}'
+  'static method':
+    'prefix': 'smet'
+    'body': 'static method ${1:name}() : ${2:Type}'
+  'abstract static method':
+    'prefix': 'asmet'
+    'body': 'abstract static method ${1:name}() : ${2:Type}'
+  'generalizes':
+    'prefix': 'gen'
+    'body': 'generalizes ${1:Name}'
+  'realizes':
+    'prefix': 'rea'
+    'body': 'realizes ${1:Name}'
+  'dependency':
+    'prefix': 'de'
+    'body': 'dependency ${1:Name}'
+  'directional dependency':
+    'prefix': 'dde'
+    'body': 'directional dependency ${1:Name}'
+  'bidirectional dependency':
+    'prefix': 'bde'
+    'body': 'bidirectional dependency ${1:Name}'
+  'association':
+    'prefix': 'as'
+    'body': 'association ${1:Name}'
+  'directional association':
+    'prefix': 'das'
+    'body': 'directional association ${1:Name}'
+  'bidirectional association':
+    'prefix': 'bas'
+    'body': 'bidirectional association ${1:Name}'
+  'aggregation':
+    'prefix': 'ag'
+    'body': 'aggregation ${1:Name}'
+  'directional aggregation':
+    'prefix': 'dag'
+    'body': 'directional aggregation ${1:Name}'
+  'bidirectional aggregation':
+    'prefix': 'bag'
+    'body': 'bidirectional aggregation ${1:Name}'
+  'composition':
+    'prefix': 'co'
+    'body': 'composition ${1:Name}'
+  'directional composition':
+    'prefix': 'dco'
+    'body': 'directional composition ${1:Name}'
+  'bidirectional composition':
+    'prefix': 'bco'
+    'body': 'bidirectional composition ${1:Name}'

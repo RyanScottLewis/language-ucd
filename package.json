@@ -1,0 +1,11 @@
+{
+  "name": "language-ucd",
+  "version": "0.1.0",
+  "description": "UCD language support in Atom",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/RyanScottLewis/language-ucd"
+}

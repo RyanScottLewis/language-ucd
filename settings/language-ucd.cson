@@ -1,0 +1,32 @@
+'.source.ucd':
+  editor:
+    # 'commentStart': '# '
+    'increaseIndentPattern': '{\\s*$'
+    'decreaseIndentPattern': '^\\s*}\\b)'
+# 	autocomplete:
+# 		symbols:
+# 			class:
+#         selector: '.class.name, .inherited-class, .instance.type'
+#         typePriority: 4
+#       function:
+#         selector: '.function.name'
+#         typePriority: 3
+#       variable:
+#         selector: '.variable'
+#         typePriority: 2
+#       '': # the catch-all
+#         selector: '.source'
+#         typePriority: 1
+# '.source.ucd .meta.class':
+# 	autocomplete:
+# 		symbols:
+# 			builtin:
+# 				suggestions: [
+# 					{
+# 						type: 'class'
+# 						text: 'Class'
+# 					}
+# 				]
+'.source.ucd':
+  'editor':
+    'foldEndPattern': '\\s*}'

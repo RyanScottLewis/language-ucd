@@ -1,0 +1,67 @@
+name: 'UCD'
+scopeName: 'source.ucd'
+fileTypes: [ 'ucd' ]
+patterns: [
+  { # Class
+    captures:
+      1:
+        name: 'keyword.control.type.ucd'
+      2:
+        name: 'keyword.control.class.ucd'
+      3:
+        name: 'entity.name.class.ucd'
+    match: '^\\s*(?:(abstract|interface)\\s)?+(class)\\s+([a-zA-Z0-9_-]+)?'
+    name: 'meta.class.ucd'
+  }
+  { # Field
+    captures:
+      1:
+        name: 'keyword.control.static.ucd'
+      2:
+        name: 'keyword.control.function.ucd'
+      3:
+        name: 'entity.name.function.ucd'
+    match: '^\\s*(?:(static)\\s)?+(field)\\s+([a-zA-Z0-9_-]+)'
+    name: 'meta.field.ucd'
+  }
+  { # Method
+    captures:
+      1:
+        name: 'keyword.control.abstract.ucd'
+      2:
+        name: 'keyword.control.static.ucd'
+      3:
+        name: 'keyword.control.function.ucd'
+      4:
+        name: 'entity.name.function.ucd'
+    match: '^\\s*(?:(abstract)\\s)?(?:(static)\\s)?+(method)\\s+([a-zA-Z0-9_-]+)'
+    name: 'meta.function.ucd'
+  }
+  { # Relationship
+    captures:
+      1:
+        name: 'keyword.control.relationship.ucd'
+      2:
+        name: 'entity.name.class.ucd'
+    match: '(generalizes|realizes)\\s+([A-Za-z0-9_-]+)'
+    name: 'meta.relationship.ucd'
+  }
+  { # Class Relationship
+    captures:
+      1:
+        name: 'keyword.control.directionality.ucd'
+      2:
+        name: 'keyword.control.relationship.ucd'
+      3:
+        name: 'entity.name.class.ucd'
+    match: '(?:(directional|bidirectional)\\s+)?(dependency|association|aggregation|composition)\\s+([a-zA-Z0-9_-]+)'
+    name: 'meta.class_relationship.ucd'
+  }
+  { # name : ClassName
+    captures:
+      1:
+        name: 'entity.name.class.ucd'
+    match: ':\\s*([a-zA-Z0-9_-]+)'
+    name: 'meta.type.ucd'
+  }
+]
